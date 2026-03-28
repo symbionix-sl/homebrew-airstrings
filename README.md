@@ -31,19 +31,15 @@ airstrings publish
 
 ## MCP Server
 
-Connect AI assistants to AirStrings:
+Connect AI assistants to AirStrings with one command:
 
-```json
-{
-  "mcpServers": {
-    "airstrings": {
-      "command": "airstrings-mcp"
-    }
-  }
-}
+```bash
+airstrings mcp install                  # for Claude Code
+airstrings mcp install --claude-desktop # for Claude Desktop
+airstrings mcp status                   # check installation
 ```
 
-After `brew install`, `airstrings-mcp` is in your PATH — no absolute path needed.
+Restart Claude and the tools are available. No manual JSON editing needed.
 
 ## Updating
 

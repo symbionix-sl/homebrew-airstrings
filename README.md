@@ -28,6 +28,18 @@ airstrings push
 airstrings publish
 ```
 
+## Profile Management
+
+```bash
+airstrings profile add staging --key ask_test_xxx --url https://api-staging.airstrings.com
+airstrings profile list              # shows all profiles, ✓ marks active
+airstrings profile use staging       # switch active profile
+airstrings profile show              # show active profile details
+airstrings profile set-key NEW_KEY   # update API key on active profile
+airstrings profile set-key NEW_KEY --profile staging   # update specific profile
+airstrings profile remove old-profile
+```
+
 ## MCP Server
 
 Connect AI assistants to AirStrings with one command:

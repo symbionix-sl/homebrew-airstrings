@@ -5,8 +5,7 @@ Official Homebrew tap for the [AirStrings](https://airstrings.com) CLI and MCP s
 ## Install
 
 ```bash
-brew tap symbionix-sl/airstrings
-brew install airstrings
+brew install symbionix-sl/airstrings/airstrings
 ```
 
 This installs two binaries:

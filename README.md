@@ -16,8 +16,10 @@ This installs two binaries:
 ## Usage
 
 ```bash
-# Set up your project
-airstrings profile add myproject --key ask_live_xxxxxxxxxxxx
+# Log in with your API key
+airstrings login ask_live_xxxxxxxxxxxx
+
+# Initialize workspace in your project
 airstrings init
 
 # Manage strings locally
@@ -28,16 +30,18 @@ airstrings push
 airstrings publish
 ```
 
-## Profile Management
+## Navigation
 
 ```bash
-airstrings profile add staging --key ask_test_xxx --url https://api-staging.airstrings.com
-airstrings profile list              # shows all profiles, ✓ marks active
-airstrings profile use staging       # switch active profile
-airstrings profile show              # show active profile details
-airstrings profile set-key NEW_KEY   # update API key on active profile
-airstrings profile set-key NEW_KEY --profile staging   # update specific profile
-airstrings profile remove old-profile
+airstrings status                    # show active project, env, and key
+airstrings env                       # list environments (✓ = active)
+airstrings env use staging           # switch environment
+airstrings project use MyProject     # switch project
+
+# Shorthands (chainable)
+airstrings -e -u staging             # switch env
+airstrings -p -u MyProject           # switch project
+airstrings -p -u MyProject -e -u staging   # switch both
 ```
 
 ## MCP Server

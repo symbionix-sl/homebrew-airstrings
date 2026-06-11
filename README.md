@@ -23,7 +23,7 @@ airstrings login ask_live_xxxxxxxxxxxx
 airstrings init
 
 # Manage strings locally
-airstrings local set greeting en="Hello" it="Ciao" --section home
+airstrings strings set greeting en="Hello" it="Ciao" --section home
 airstrings push
 
 # Publish to CDN
@@ -60,9 +60,10 @@ airstrings -p -u <project> -e -u <env>           # switch both
 ```bash
 airstrings strings list [--locale <loc>] [--section <id>] [--limit <n>]
 airstrings strings get <key>
-airstrings strings set <key> <locale>=<value> [<locale>=<value>...]
-airstrings strings create <key> <locale>=<value> [--format text|icu] [--section <id>]
-airstrings strings delete <key>
+airstrings strings set <key> <locale>=<value>... [--format text|icu] [--section <name>] [--push]
+airstrings strings rm <key> [--locale <loc>] [--section <name>] [--push]
+# set/rm edit local CSVs; --push also syncs the key to the API
+# strings create / strings delete are aliases of set / rm
 ```
 
 ### Sections
@@ -91,11 +92,10 @@ airstrings import status <id>                    # check import status
 
 ```bash
 airstrings init                                  # initialize local workspace
-airstrings local set <key> <locale>=<value> [--format text|icu] [--section <name>]
-airstrings local rm <key> [--locale <loc>] [--section <name>]
-airstrings local ls [--section <name>]           # list local strings
+airstrings local ls [--section <name>]           # list local strings (deprecated)
 airstrings push [--section <name>]               # push local strings to API
 airstrings pull [--section <name>]               # pull remote strings to local
+# local set / local rm are deprecated — use strings set / strings rm
 ```
 
 ### MCP Server

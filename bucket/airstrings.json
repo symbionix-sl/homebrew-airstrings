@@ -1,12 +1,12 @@
 {
-    "version": "0.13.3",
+    "version": "0.13.4",
     "description": "CLI for the AirStrings remote string management platform",
     "homepage": "https://airstrings.com",
     "license": "MIT",
     "architecture": {
         "64bit": {
-  "url": "https://github.com/symbionix-sl/homebrew-airstrings/releases/download/v0.13.3/airstrings-v0.13.3-windows-amd64.zip",
-  "hash": "826dca02a8b3c9574a830a00d26f82abc8a9df7d6dbd2d124cb832c3dcc636c1"
+  "url": "https://github.com/symbionix-sl/homebrew-airstrings/releases/download/v0.13.4/airstrings-v0.13.4-windows-amd64.zip",
+  "hash": "da1f1e6c333e5288073ab2700b5b6758e7be991303dc5e06c15f08ac5f896db2"
         }
     },
     "bin": [

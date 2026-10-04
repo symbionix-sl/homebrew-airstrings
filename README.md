@@ -1,6 +1,6 @@
 # Homebrew Tap for AirStrings CLI
 
-Official Homebrew tap for the [AirStrings](https://airstrings.com) CLI and MCP server.
+Official Homebrew tap for the [AirStrings](https://airstrings.com) CLI and MCP server. AirStrings ships over-the-air string updates to iOS, Android, web and React Native apps as Ed25519-signed bundles.
 
 ## Install
 

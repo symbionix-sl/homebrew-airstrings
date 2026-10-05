@@ -1,26 +1,26 @@
 class Airstrings < Formula
   desc "CLI for the AirStrings remote string management platform"
   homepage "https://airstrings.com"
-  version "0.15.0"
+  version "0.16.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/symbionix-sl/homebrew-airstrings/releases/download/v0.15.0/airstrings-v0.15.0-darwin-arm64.tar.gz"
-      sha256 "b31604745549f588698f93255b44256de71f3c7be76c1a4c50c1be3de7e88a91"
+      url "https://github.com/symbionix-sl/homebrew-airstrings/releases/download/v0.16.0/airstrings-v0.16.0-darwin-arm64.tar.gz"
+      sha256 "b434f0b3ffa4f4e9eaf8be4bebbb447f4474d82c832b576bc7b9d5ff283da369"
     else
-      url "https://github.com/symbionix-sl/homebrew-airstrings/releases/download/v0.15.0/airstrings-v0.15.0-darwin-amd64.tar.gz"
-      sha256 "d6e81137d0ecbef9a3aafe5827c0f1874f2672ce123b9e0e19422583ff9e320f"
+      url "https://github.com/symbionix-sl/homebrew-airstrings/releases/download/v0.16.0/airstrings-v0.16.0-darwin-amd64.tar.gz"
+      sha256 "d9adecd93170d94ad27e29814357b097723823e9203f827554bf6ede3a815149"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/symbionix-sl/homebrew-airstrings/releases/download/v0.15.0/airstrings-v0.15.0-linux-arm64.tar.gz"
-      sha256 "846d90ca206a6f3d3ff4ccea86167d99dfc90b366bf5d729f43203c788e42357"
+      url "https://github.com/symbionix-sl/homebrew-airstrings/releases/download/v0.16.0/airstrings-v0.16.0-linux-arm64.tar.gz"
+      sha256 "2b38f0f6faedf8389555a798f710139ebb7e03e88bdf8482af38b296cf143517"
     else
-      url "https://github.com/symbionix-sl/homebrew-airstrings/releases/download/v0.15.0/airstrings-v0.15.0-linux-amd64.tar.gz"
-      sha256 "84d4dd7370c425eb900d9bec09aa418a09512b64b9b532fe1e10a54be3bd72ad"
+      url "https://github.com/symbionix-sl/homebrew-airstrings/releases/download/v0.16.0/airstrings-v0.16.0-linux-amd64.tar.gz"
+      sha256 "cdb7d0af722861ee1b2d0d63ffc630f6b52a48c42096c7197c1971fe9db2ffcc"
     end
   end
 
